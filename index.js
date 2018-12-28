@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000
 const app = express();
 const bodyparser = require('body-parser');
 const mysql = require('mysql');
+const sprintf = require('sprintf-js').vsprintf;
 
 // $servername = "db4free.net";
 // $username = "sumitkumardey";
@@ -19,7 +20,6 @@ var mysqlConnection = mysql.createConnection({
   multipleStatements: true
 });
 
-const sprintf = require('sprintf-js').vsprintf;
 app.use(bodyparser.json());
 
 
