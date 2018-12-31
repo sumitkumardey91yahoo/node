@@ -31,7 +31,7 @@ mysqlConnection.connect((err) => {
 });
 
 
-  app.use(express.static(path.join(__dirname, 'public')))
+//   app.use(express.static(path.join(__dirname, 'public')))
   app.set('views', path.join(__dirname, 'views'))
   app.set('view engine', 'ejs')
   app.get('/', (req, res) => res.render('pages/index'))
@@ -46,12 +46,16 @@ mysqlConnection.connect((err) => {
     res.setHeader('Content-Type', 'application/json');
     let query = null;
     query = 'select * from employees' + ' ';
-    query += sprintf('where employeeNumber = %d', [1612]);
-    console.log(query, "test");
+    // query += sprintf('where employeeNumber = %d', [1612]);
+    // console.log(query, req.body.id); // get body data in node
     mysqlConnection.query(query, (err, rows, fields) => {
-        if (!err)
+        if (!err) {
              res.send(JSON.stringify({"list":rows}));
+             console.log("query part");
+        }
         else
             console.log(err);
     })
+    console.log("done here");
 });
+
