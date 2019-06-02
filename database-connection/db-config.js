@@ -1,9 +1,10 @@
 const mysql = require('mysql');
 const mode = require("./db-type");
 
-console.log("[mode]", mode)
+console.log("[mode]>>>", mode)
 let mysqlConnection = "";
-if (mode === 'production') {
+if (mode == 'production') {
+  console.log("[mode-type]>>>", mode)
    mysqlConnection = mysql.createConnection({
     host: 'db4free.net',
     user: 'sumitkumardey',
@@ -12,6 +13,8 @@ if (mode === 'production') {
     multipleStatements: true
   });
 } else {
+  console.log("[mode-type]>>>", "testing")
+
    mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
