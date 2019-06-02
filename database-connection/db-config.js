@@ -21,9 +21,10 @@ if (mode === 'production') {
   });
 }
 
+console.log("mysqlConnection>>>>>", mysqlConnection)
 mysqlConnection.connect(function (err) {
   if (err) {
-    console.error(err);
+    console.error("error->>>>>>>>>>", err);
     return;
   } else {
     console.log('db is connected');
