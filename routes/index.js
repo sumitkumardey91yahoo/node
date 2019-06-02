@@ -3,11 +3,11 @@ const router = express.Router();
 
 const mysqlConnection  = require('../database-connection/db-config.js');
 
-router.get('/', (req, res) => {
-  res.send("welcome")
-});
+// router.get('/', (req, res) => {
+//   res.send("welcome")
+// });
 // GET all customer
-router.get('/customer', (req, res) => {
+router.get('/', (req, res) => {
   mysqlConnection.query('SELECT * FROM customers', (err, rows, fields) => {
     if(!err) {
       res.send(rows);

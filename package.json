@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "node test.js",
-    "dev-start": "nodemon ./bin/www.js"
+    "dev-start": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
