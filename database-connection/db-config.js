@@ -5,7 +5,7 @@ console.log("[mode]>>>", mode)
 let mysqlConnection = "";
 if (mode.mode == 'production') {
   console.log("[mode-type]>>>", mode)
-   mysqlConnection = mysql.createConnection({
+  mysqlConnection = mysql.createConnection({
     host: 'db4free.net',
     user: 'sumitkumardey',
     password: 'sumit@1991',
@@ -15,7 +15,7 @@ if (mode.mode == 'production') {
 } else {
   console.log("[mode-type]>>>", "testing")
 
-   mysqlConnection = mysql.createConnection({
+  mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'mobiotics',
