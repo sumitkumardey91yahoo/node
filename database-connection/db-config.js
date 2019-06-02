@@ -3,7 +3,7 @@ const mode = require("./db-type");
 
 console.log("[mode]>>>", mode)
 let mysqlConnection = "";
-if (mode == 'production') {
+if (mode.mode == 'production') {
   console.log("[mode-type]>>>", mode)
    mysqlConnection = mysql.createConnection({
     host: 'db4free.net',
