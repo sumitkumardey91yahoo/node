@@ -1,0 +1,10 @@
+hs: 
+   [ '/Users/sumit/Documents/Sumit/Development/nodeJs/node-work/cmd-work/node_modules',
+     '/Users/sumit/Documents/Sumit/Development/nodeJs/node-work/node_modules',
+     '/Users/sumit/Documents/Sumit/Development/nodeJs/node_modules',
+     '/Users/sumit/Documents/Sumit/Development/node_modules',
+     '/Users/sumit/Documents/Sumit/node_modules',
+     '/Users/sumit/Documents/node_modules',
+     '/Users/sumit/node_modules',
+     '/Users/node_modules',
+     '/node_modules' ]
